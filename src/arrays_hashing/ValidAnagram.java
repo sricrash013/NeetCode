@@ -1,6 +1,5 @@
 package arrays_hashing;
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -11,10 +10,11 @@ public class ValidAnagram {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.next();
         String t = scanner.next();
-        System.out.println(isAnagram(s,t));
+        System.out.println(isAnagram(s, t));
     }
+
     public static boolean isAnagram(String s, String t) {
-        if (s.length() != t.length()){
+        if (s.length() != t.length()) {
             return false;
         }
         int[] freq = new int[26];
